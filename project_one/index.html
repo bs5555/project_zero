@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project zero</title>
+    <meta name="description" content="Webdesign for Design Mayors">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="res/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" type="text/css" href="res/global.css" />
+    <style>
+div.main{max-width:1000px; min-height:100vh; margin:0 auto; display:grid; grid-gap:10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr 200px;
+}
+div.frame{background-color:#fee; padding:1em;}
+div.header{grid-column-start:1; grid-column-end:3;}
+div.footer{grid-column-start:1; grid-column-end:3;}
+
+    </style>
+  </head>
+  <body>
+<div class="main">
+  <div class="frame header">Hello world 1</div>
+  <div class="frame">Hello again 2</div>
+  <div class="frame">Hello world 3</div>
+  <div class="frame footer">Hello again 4</div>
+</div>
+
+  </body>
+</html>
