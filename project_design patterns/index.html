@@ -30,16 +30,76 @@
   {
     div.text-image{grid-template-columns: 1fr;}
   }
-
    div.text-image img{width:100%; align-self:center;}
-
    div.text-image div.rtf{align-self:center;}
 
    div.rtf p{max-width:60ch; line-height:2em; margin-bottom:3em;}
    div.rtf h2{font-size:3em; line-height:2em; margin-bottom:2em;}
+
+   div.cards{display:grid; grid-template-columns:1fr 1fr 1fr 1fr; grid-gap:5vw; padding:5vw;}
+
+
+
+   div.card{background-color:#fcc; aspect-ratio:1 / 1;
+
+     border-radius:50%;
+     box-shadow:0 0 20px rgba(0,0,0,0.5);
+     transition:all 0.5s;
+   }
+
+   div.card:hover{background-color:#f44;
+     box-shadow:0 0 40px rgba(0,0,0,0.5);
+     transform:scale(1.1);
+   }
+
+   @media (max-width:1000px)
+   {
+     div.cards{grid-template-columns:1fr 1fr 1fr;}
+   }
+   @media (max-width:800px)
+   {
+     div.cards{grid-template-columns:1fr 1fr;}
+   }
+   @media (max-width:600px)
+   {
+     div.cards{grid-template-columns:1fr;}
+   }
+
+   div.cards2{display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+     grid-gap:5vw; padding:5vw;}
+
+
     </style>
   </head>
   <body>
+
+
+<div class="cards2">
+  <div class="card">1</div>
+  <div class="card">2</div>
+  <div class="card">3</div>
+  <div class="card">4</div>
+  <div class="card">5</div>
+  <div class="card">6</div>
+  <div class="card">7</div>
+  <div class="card">8</div>
+</div>
+
+
+<div class="cards">
+  <div class="card">1</div>
+  <div class="card">2</div>
+  <div class="card">3</div>
+  <div class="card">4</div>
+  <div class="card">5</div>
+  <div class="card">6</div>
+  <div class="card">7</div>
+  <div class="card">8</div>
+</div>
+
+
+
 
 <div class="text-image">
   <img src="res/hero.jpg" alt="Hero is here">
