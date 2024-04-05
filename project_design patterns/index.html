@@ -42,14 +42,15 @@
 
    div.card{background-color:#fcc; aspect-ratio:1 / 1;
 
-     border-radius:50%;
+     border-radius:20% 80% 30% 50%;
      box-shadow:0 0 20px rgba(0,0,0,0.5);
      transition:all 0.5s;
    }
 
    div.card:hover{background-color:#f44;
+     border-radius:80% 20% 90% 50%;
      box-shadow:0 0 40px rgba(0,0,0,0.5);
-     transform:scale(1.1);
+     transform:scale(1.1) rotateY(360deg);
    }
 
    @media (max-width:1000px)
